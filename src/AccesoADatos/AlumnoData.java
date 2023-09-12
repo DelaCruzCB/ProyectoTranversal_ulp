@@ -4,6 +4,7 @@
  */
 package AccesoADatos;
 
+import Entidades.Alumno;
 import java.sql.*;
 import java.util.List;
 import java.util.logging.Level;

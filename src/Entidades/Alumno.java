@@ -4,6 +4,7 @@
  */
 package Entidades;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -15,13 +16,13 @@ public class Alumno {
     private String nombre;
     private String apellido;
     private int dni;
-    private Date fechaNacimiento;
-    private int estado;
+    private LocalDate fechaNacimiento;
+    private boolean estado;
 
     public Alumno() {
     }
 
-    public Alumno(String nombre, String apellido, int dni, Date fechaNacimiento, int estado) {
+    public Alumno(String nombre, String apellido, int dni, LocalDate fechaNacimiento, boolean estado) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
@@ -29,7 +30,7 @@ public class Alumno {
         this.estado = estado;
     }
 
-    public Alumno(int idAlumno, String nombre, String apellido, int dni, Date fechaNacimiento, int estado) {
+    public Alumno(int idAlumno, String nombre, String apellido, int dni, LocalDate fechaNacimiento, boolean estado) {
         this.idAlumno = idAlumno;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -70,19 +71,19 @@ public class Alumno {
         this.dni = dni;
     }
 
-    public Date getFechaNacimiento() {
+    public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
     }
 
-    public void setFechaNacimiento(Date fechaNacimiento) {
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    public int getEstado() {
+    public boolean isEstado() {
         return estado;
     }
 
-    public void setEstado(int estado) {
+    public void setEstado(boolean estado) {
         this.estado = estado;
     }
 
